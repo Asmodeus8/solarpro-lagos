@@ -16,13 +16,13 @@ export const Route = createFileRoute("/products")({
       {
         name: "description",
         content:
-          "Solar panels, hybrid inverters, lithium batteries and complete installation packages from ₦650,000 — professionally installed by our Lagos-based team.",
+          "Complete solar installation packages from 3KVA to 20KVA, from ₦1,900,000 — professionally installed by our Lagos-based team.",
       },
       { property: "og:title", content: "Solar Products & Packages — 7thbreed Ltd" },
       {
         property: "og:description",
         content:
-          "Compare Starter, Standard, Premium and Commercial solar packages with transparent Lagos pricing.",
+          "Compare Core, Pro, Max and Extra solar packages from 3KVA to 20KVA with transparent Lagos pricing.",
       },
       { property: "og:image", content: heroImage },
       { name: "twitter:image", content: heroImage },
@@ -31,13 +31,7 @@ export const Route = createFileRoute("/products")({
   component: ProductsPage,
 });
 
-const categories = [
-  "All",
-  "Solar Panels",
-  "Inverters",
-  "Batteries",
-  "Complete Packages",
-] as const;
+const categories = ["All", "Complete Packages"] as const;
 
 function ProductsPage() {
   const [active, setActive] = useState<(typeof categories)[number]>("All");

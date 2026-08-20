@@ -57,7 +57,7 @@ export function ProductCard({
 }: {
   image: string;
   name: string;
-  tag: string;
+  tag?: string;
   badge?: string | undefined;
   price: string;
   specs: string[];
@@ -79,7 +79,7 @@ export function ProductCard({
       </div>
       <div className="flex flex-1 flex-col p-6">
         <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-          {tag}
+          {tag || "Solar Package"}
         </span>
         <h3 className="mt-2 text-lg font-semibold leading-snug">{name}</h3>
         <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
