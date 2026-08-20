@@ -11,7 +11,7 @@ export const site = {
 
 export const heroImage = "/images/hero/11.jpg";
 
-export const heroImages = ["/images/hero/11.jpg", "/images/hero/2.jpg", "/images/hero/5.jpg", "/images/hero/10.jpg", "/images/hero/3.jpg", "/images/hero/4.jpg", "/images/hero/9.jpg", "/images/hero/5.png", "/images/hero/11.png", "/images/hero/7.png", "/images/hero/9.png", "/images/hero/3.png"];
+export const heroImages = ["/images/hero/11.jpg", "/images/hero/2.jpg", "/images/hero/5.jpg", "/images/hero/6.jpg", "/images/hero/9.jpg", "/images/hero/automation-a.jpg", "/images/hero/automation-b.jpg"];
 
 export const stats = [
   {"value": 500, "suffix": "+", "label": "Installations", "sub": "Homes & businesses powered"},
